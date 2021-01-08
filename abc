@@ -1,0 +1,4 @@
+$AgentVersion = (Get-ChildItem -Path "C:\Program Files\Microsoft Monitoring Agent\Agent\AzureAutomation\")[0].Name
+cd "C:\Program Files\Microsoft Monitoring Agent\Agent\AzureAutomation\$AgentVersion\HybridRegistration"
+Import-Module .\HybridRegistration.psd1
+Add-HybridRunbookWorker –GroupName Windows -EndPoint https://0a48e103-e23c-4903-a396-ba3096d70193.agentsvc.sea.azure-automation.net/accounts/0a48e103-e23c-4903-a396-ba3096d70193 -Token KlM84CwMbil4euehSHf6MXupfDFE2aWsWMKwN0+yLb5aX6EOg///FI2TRjl/+V0Ev12jwElA64D60vQRYJ13iw==
